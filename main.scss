@@ -1,0 +1,51 @@
+$primary: #2b2d42;
+$secondary: #8d99ae;
+$accent: #ef233c;
+$background: #edf2f4;
+$text: #22223b;
+
+body {
+    background: url('car-finder-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: $text;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.car-finder-container {
+    background: rgba(255,255,255,0.9);
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h1 {
+    color: $primary;
+    margin-bottom: 2rem;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid $secondary;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: $background;
+    color: $text;
+    transition: border 0.2s;
+    &:disabled {
+        background: $secondary;
+        color: #fff;
+        cursor: not-allowed;
+    }
+    &:focus {
+        border: 1.5px solid $accent;
+        outline: none;
+    }
+}
