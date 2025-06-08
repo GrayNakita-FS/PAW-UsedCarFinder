@@ -18,7 +18,7 @@ body {
   display: flex;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   padding: 40px 30px;
   gap: 48px;
   min-width: 900px;
